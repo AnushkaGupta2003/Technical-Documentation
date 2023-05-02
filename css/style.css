@@ -1,0 +1,51 @@
+
+.contents{
+  border-bottom: solid;
+  border-color: grey;
+  border-width: 1px;
+  
+}
+.sidebar{
+  position: fixed; /*side bar gets fixed*/
+}
+.description{
+ margin-left: 16%; /*prevent overlap with sidebar, sidebar has fixed position */
+}
+@media (max-width: 767px){  /*sidebar becomes horizontal when viewport is< 768px or md */
+  .sidebar{
+    width: 100%;
+    height: auto;
+    position: relative;
+       }
+.contents{
+  float :left;
+  padding-right: 10px;
+ 
+}
+.description{margin-left: 0px;}
+}
+@media (max-width: 400px) {  /*sidebar becomes vertically algined in middle when viewport is upto 400px  */
+  .contents {
+    
+    text-align: center;
+    float: none;
+  }
+  .description{margin-left: 0px;}
+}
+.heading{
+  padding-top: 5px;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main{
+  padding-left:10px;
+}
+.side-heading{
+
+ padding-left:10px;
+}
+
+
+ 
+
+           
